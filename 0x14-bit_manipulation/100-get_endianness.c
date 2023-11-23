@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * fetch_things - examine the things
+ * get_endianness - examine the things
  *
  * Return:return 0 if big endian else, 1 if little endian
  */
-int fetch_things(void)
+int get_endianness(void)
 {
 unsigned int z;
 char *r;
