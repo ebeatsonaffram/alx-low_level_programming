@@ -8,29 +8,30 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int df;
+	int fd;
 	int numlet;
 	int readwrite;
 
 	if (!filename)
 		return (-1);
 
-	df = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	if (df == -1)
+	if (fd == -1)
 		return (-1);
 
 	if (!text_content)
 		text_content = "";
 
-	for (numlet = 0; text_content[numlet]; numlet++);
+	for (numlet = 0; text_content[numlet]; numlet++)
+		;
 
-	readwrite = write(df, text_content, numlet);
+	readwrite = write(fd, text_content, numlet);
 
 	if (readwrite == -1)
 		return (-1);
 
-	close(df);
+	close(fd);
 
 	return (1);
 }
