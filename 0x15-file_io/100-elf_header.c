@@ -114,9 +114,9 @@ void print_data(unsigned char *e_ident)
 	}
 }
 /**
- * print_version - inscribe the version 
+ * print_version - inscribe the version
  * of an ELF header.
- * @e_ident: A index to an 
+ * @e_ident: A index to an
  * array containing the ELF version.
  */
 void print_version(unsigned char *e_ident)
@@ -135,9 +135,9 @@ void print_version(unsigned char *e_ident)
 	}
 }
 /**
- * print_osabi - inscribe the 
+ * print_osabi - inscribe the
  * OS/ABI of an ELF header.
- * @e_ident: A index to an array 
+ * @e_ident: A index to an array
  * containing the ELF version.
  */
 void print_osabi(unsigned char *e_ident)
@@ -181,7 +181,7 @@ void print_osabi(unsigned char *e_ident)
 	}
 }
 /**
- * print_abi - inscribe the ABI version 
+ * print_abi - inscribe the ABI version
  * of an ELF header.
  * @e_ident: A index to an array containing
  *  the ELF ABI version.
@@ -194,7 +194,7 @@ void print_abi(unsigned char *e_ident)
 /**
  * print_type - inscribe the type of an ELF header.
  * @e_type: this is The ELF type.
- * @e_ident: A index to an array 
+ * @e_ident: A index to an array
  * containing the ELF class.
  */
 void print_type(unsigned int e_type, unsigned char *e_ident)
@@ -226,11 +226,11 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 	}
 }
 /**
- * print_entry - inscribe the entry point 
+ * print_entry - inscribe the entry point
  * of an ELF header.
  * @e_entry: The address of
  *  the ELF entry point.
- * @e_ident: A pointer to an array 
+ * @e_ident: A pointer to an array
  * containing the ELF class.
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
@@ -269,7 +269,7 @@ void close_elf(int elf)
 /**
  * main - prints the information contained in the
  *        ELF header at the start of an ELF file.
- * @argc: The number of arguments 
+ * @argc: The number of arguments
  * supplied to the program.
  * @argv: An array of pointers to the arguments.
  * Return: 0 on success.
