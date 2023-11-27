@@ -22,9 +22,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (!text_content)
 		text_content = "";
-numlet
-	for (numlet = 0; text_content[numlet]; ++)
-		;
+
+	for (numlet = 0; text_content[numlet]; numlet++);
 
 	readwrite = write(df, text_content, numlet);
 
