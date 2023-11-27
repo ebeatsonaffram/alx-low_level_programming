@@ -4,7 +4,7 @@
  *  the end of a file
  * @filename: indicates the filename.
  * @text_content: adds the  content.
- * Return: fetch 1 if the file exists. 
+ * Return: fetch 1 if the file exists.
  * -1 if the fails does not exist
  * or if it fails.
  */
