@@ -5,10 +5,10 @@
 #include <fcntl.h>
 #include <stdlib.h>
 /**
- * read_textfile - This should take a text 
+ * read_textfile - This should take a text
  * file and display to the POSIX standard output.
  * @filename: indicates name of the file to to take.
- * @letters: shows the number of letters it 
+ * @letters: shows the number of letters it
  * should read and print.
  * Return: return the actual number of
  *  letters it could read and print
